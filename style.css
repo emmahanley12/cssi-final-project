@@ -6,22 +6,12 @@ h1 {
   font-size: 310%;
 }
 
-#developers{
-  font-family: 'Waiting for the Sunrise', sans-serif;
-  text-align: left;
-  font-size: 130%;
-}
-
-#logo {
+#logo, #developers, #references {
   font-family: 'Waiting for the Sunrise', sans-serif;
   text-align: center;
   font-size: 130%;
-}
-
-#references{
-  font-family: 'Waiting for the Sunrise', sans-serif;
-  text-align: right;
-  font-size: 130%;
+  width: 40%
+  display: inline-block;
 }
 
 .blurb{
