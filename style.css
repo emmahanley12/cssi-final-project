@@ -38,3 +38,7 @@ h1 {
 .column {
   display:inline-block;
 }
+
+.image_container {
+  height: 315px;
+}
