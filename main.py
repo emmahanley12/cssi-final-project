@@ -56,8 +56,16 @@ class ServiceHandler(webapp2.RequestHandler):
 
     def post(self):
         food_service = self.request.get_all('service')
-        self.response.write(food_service)
+        self.redirect('foodreservation')
 
+class ReservationHandler(webapp2.RequestHandler):
+    def get(self):
+        template = jinja_environment.get_template('questions-form-reservation.html')
+        self.response.write(template.render())
+
+    def post(self):
+        food_reservation = self.request.get_all('reservation')
+        self.response.write(food_reservation)
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
@@ -65,5 +73,6 @@ app = webapp2.WSGIApplication([
     ('/foodprice', PricesHandler),
     ('/fooddistance', DistanceHandler),
     ('/foodattire', AttireHandler),
-    ('/foodservice', ServiceHandler)
+    ('/foodservice', ServiceHandler),
+    ('/foodreservation', ReservationHandler)
 ], debug=True)
