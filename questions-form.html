@@ -1,0 +1,14 @@
+<!DOCTYPE html> 
+{% autoescape true %}
+<html>
+  <body>
+    <h2>Posts</h2>
+    <form method="post" action="/save">
+      <div>What kind of food do you want?<input type = "radio" name ="food" value= ></input>
+          Blog Entry:<textarea name ="content" ></textarea></input>
+      </div>
+      <div><input type="submit" value="Add Post"></div>
+    </form>
+  </body>
+</html>
+{% endautoescape %}
