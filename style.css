@@ -1,3 +1,7 @@
 body {
   overflow: scroll;
 };
+
+h1 {
+  text-align: center;
+};
