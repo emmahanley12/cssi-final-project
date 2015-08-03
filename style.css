@@ -1,6 +1,29 @@
-body {
-  overflow: scroll;
-};
+@import url(http://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise);
+
+h1 {
+  font-family: 'Waiting for the Sunrise', sans-serif;
+  text-align: center;
+}
+
+#developers{
+  font-family: 'Waiting for the Sunrise', sans-serif;
+  text-align: left;
+}
+
+#logo {
+  font-family: 'Waiting for the Sunrise', sans-serif;
+  text-align: center;
+}
+
+#references{
+  font-family: 'Waiting for the Sunrise', sans-serif;
+  text-align: right;
+}
+
+.blurb{
+  font-family: 'Waiting for the Sunrise', sans-serif;
+  text-align: center
+}
 
 h1 {
   text-align: center;
