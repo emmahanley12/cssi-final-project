@@ -38,11 +38,32 @@ class DistanceHandler(webapp2.RequestHandler):
 
     def post(self):
         food_distance = self.request.get('distance')
-        self.response.write(food_distance)
+        self.redirect('foodattire')
+
+class AttireHandler(webapp2.RequestHandler):
+    def get(self):
+        template = jinja_environment.get_template('questions-form-attire.html')
+        self.response.write(template.render())
+
+    def post(self):
+        food_attire = self.request.get_all('attire')
+        self.redirect('foodservice')
+
+class ServiceHandler(webapp2.RequestHandler):
+    def get(self):
+        template = jinja_environment.get_template('questions-form-service.html')
+        self.response.write(template.render())
+
+    def post(self):
+        food_service = self.request.get_all('service')
+        self.response.write(food_service)
+
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
     ('/foodtype', TypeHandler),
     ('/foodprice', PricesHandler),
-    ('/fooddistance', DistanceHandler)
+    ('/fooddistance', DistanceHandler),
+    ('/foodattire', AttireHandler),
+    ('/foodservice', ServiceHandler)
 ], debug=True)
