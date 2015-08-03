@@ -1,14 +1,28 @@
-<!DOCTYPE html> 
-{% autoescape true %}
+<!DOCTYPE html>
 <html>
   <body>
-    <h2>Posts</h2>
+    <h2>Food Type</h2>
     <form method="post" action="/save">
-      <div>What kind of food do you want?<input type = "radio" name ="food" value= ></input>
-          Blog Entry:<textarea name ="content" ></textarea></input>
+      <div>What kind of food do you want?
+        <input type="checkbox" name="food" value="american" >American<br>
+        <input type="checkbox" name="food" value="british" >British<br>
+        <input type="checkbox" name="food" value="caribbean" >Caribbean<br>
+        <input type="checkbox" name="food" value="chinese" >Chinese<br>
+        <input type="checkbox" name="food" value="dim_sum" >Dim Sum<br>
+        <input type="checkbox" name="food" value="french" >French<br>
+        <input type="checkbox" name="food" value="german" >German<br>
+        <input type="checkbox" name="food" value="greek" >Greek<br>
+        <input type="checkbox" name="food" value="indian" >Indian<br>
+        <input type="checkbox" name="food" value="italian" >Italian<br>
+        <input type="checkbox" name="food" value="japanese" >Japanese<br>
+        <input type="checkbox" name="food" value="korean" >Korean<br>
+        <input type="checkbox" name="food" value="mexican" >Mexican<br>
+        <input type="checkbox" name="food" value="southern" >Southern<br>
+        <input type="checkbox" name="food" value="spanish" >Spanish<br>
+        <input type="checkbox" name="food" value="thai" >Caribbean<br>
+        <input type="checkbox" name="food" value="vietnamese" >Vietnamese<br>
       </div>
-      <div><input type="submit" value="Add Post"></div>
+      <div><input type="submit" value="Next Question"></div>
     </form>
   </body>
 </html>
-{% endautoescape %}
