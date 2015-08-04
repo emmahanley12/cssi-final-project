@@ -74,7 +74,6 @@
     }
 }
 
-<<<<<<< HEAD
 #reference_header {
   margin-top: 50px;
 }
@@ -88,13 +87,12 @@ div#APIreferences {
 div#cssiteam {
   -webkit-column-count: 5;
   column-count: 5;
-=======
+
 /*the question pages*/
-#questionpagebackground {
-  background-image: url("NYCblue.png");
-}
+
 
 /*developer's page*/
+
 #developers_header {
   font-family: 'Waiting for the Sunrise', sans-serif;
   margin-top: 50px;
@@ -111,7 +109,6 @@ div#cssiteam {
 
 /*reference page*/
 #cssiteam {
->>>>>>> e261e05b2d7313ecda4179cd5ef2462109344ac4
   font-family: 'Waiting for the Sunrise', sans-serif;
 }
 
