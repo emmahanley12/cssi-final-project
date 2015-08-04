@@ -14,6 +14,10 @@ h1 {
   display: inline-block;
 }
 
+.refpagewords {
+  font-family: 'Waiting for the Sunrise', sans-serif;
+}
+
 .blurb{
   font-family: 'Waiting for the Sunrise', sans-serif;
   text-align: center;
@@ -23,6 +27,14 @@ h1 {
 #developers_info {
   -webkit-column-count: 3;
   column-count: 3;
+}
+
+.column {
+  display: inline-block;
+}
+
+.image_container {
+  height: 320px;
 }
 
 carousel .item {
@@ -41,5 +53,11 @@ carousel .item {
     .block {
         margin-left: -20px;
         margin-right: -20px;
+    }
+
+#cssiteam {
+  font-family: 'Waiting for the Sunrise', sans-serif;
+  -webkit-column-count: 5;
+  column-count: 5;
     }
 }
