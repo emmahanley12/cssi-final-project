@@ -47,6 +47,15 @@
   margin-top: -1.5%;
 }
 
+.developer_names {
+  text-align: center;
+}
+
+#developers_info{
+  -webkit-column-count: 3;
+  column-count: 3;
+}
+
 .column {
   display: inline-block;
 }
