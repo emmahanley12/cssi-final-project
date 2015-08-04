@@ -98,10 +98,17 @@
 
 /*reference page*/
 
+#reference_page_logo {
+  font-family: 'Waiting for the Sunrise', sans-serif;
+  margin-left: 46%;
+
+}
+
 #reference_header {
   margin-top: 50px;
   font-family: 'Waiting for the Sunrise', sans-serif;
   text-align: center;
+  font-weight: bold;
 }
 
 div#APIreferences {
