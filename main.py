@@ -137,7 +137,7 @@ class ResultsHandler(BaseHandler):
     def get(self):
 
         term = self.session['food_types']
-        location = 'San Francisco'
+        location = '10460'
 
         results_by_term = {}
         for i in range(len(term)):
