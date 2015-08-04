@@ -30,63 +30,17 @@ results = {}
 API_HOST = 'api.yelp.com'
 DEFAULT_TERM = 'dinner'
 DEFAULT_LOCATION = 'San Francisco, CA'
-SEARCH_LIMIT = 3
+SEARCH_LIMIT = 5
 SEARCH_PATH = '/v2/search/'
 BUSINESS_PATH = '/v2/business/'
 
 # OAuth credential placeholders that must be filled in by users.
 CONSUMER_KEY = 'R62we9CE9OfSZ24KUSA5oQ'
 CONSUMER_SECRET = 'w3Po8Mnhx0P3CNycvzr5nhGlSeQ'
-TOKEN = '3l2jIb_078LZvZvd4PpxWkXiRSJ69sB'
+TOKEN = '_3l2jIb_078LZvZvd4PpxWkXiRSJ69sB'
 TOKEN_SECRET = 'P0qf6ykcRanGO4W7WADfLYZn7Lo'
 
 
-def request(host, path, url_params=None):
-    """Prepares OAuth authentication and sends the request to the API.
-    Args:
-        host (str): The domain host of the API.
-        path (str): The path of the API after the domain.
-        url_params (dict): An optional set of query parameters in the request.
-    Returns:
-        dict: The JSON response from the request.
-    Raises:
-        urllib2.HTTPError: An error occurs from the HTTP request.
-    """
-    term = 'pizza'
-    location = 'San Francisco'
-
-    url_params = {
-        'term': term.replace(' ', '+'),
-        'location': location.replace(' ', '+'),
-        'limit': SEARCH_LIMIT
-    }
-    url_params = url_params or {}
-    url = 'http://{0}{1}?'.format(host, urllib.quote(path.encode('utf8')))
-
-    consumer = oauth2.Consumer(CONSUMER_KEY, CONSUMER_SECRET)
-    oauth_request = oauth2.Request(method="GET", url=url, parameters=url_params)
-
-    oauth_request.update(
-        {
-            'oauth_nonce': oauth2.generate_nonce(),
-            'oauth_timestamp': oauth2.generate_timestamp(),
-            'oauth_token': TOKEN,
-            'oauth_consumer_key': CONSUMER_KEY
-        }
-    )
-    token = oauth2.Token(TOKEN, TOKEN_SECRET)
-    oauth_request.sign_request(oauth2.SignatureMethod_HMAC_SHA1(), consumer, token)
-    signed_url = oauth_request.to_url()
-
-    print u'Querying {0} ...'.format(url)
-
-    conn = urllib2.urlopen(signed_url, None)
-    try:
-        response = json.loads(conn.read())
-    finally:
-        conn.close()
-
-    return response
 
 class BaseHandler(webapp2.RequestHandler):
     def dispatch(self):
@@ -122,7 +76,8 @@ class TypeHandler(BaseHandler):
 
     def post(self):
         self.session['food_types'] = self.request.get_all('type')
-        self.redirect("foodprice")
+        self.redirect("results")
+        print self.session['food_types']
 
 class PricesHandler(BaseHandler):
     def get(self):
@@ -180,9 +135,66 @@ class OtherHandler(BaseHandler):
 
 class ResultsHandler(BaseHandler):
     def get(self):
-        result_dictionary = request(API_HOST,SEARCH_PATH)
+
+        term = self.session['food_types']
+        location = 'San Francisco'
+
+        results_by_term = {}
+        for i in range(len(term)):
+            term[i] = term[i].replace(' ', '+')
+
+            url_params = {
+                'term': term[i],
+                'location': location.replace(' ', '+'),
+                'limit': SEARCH_LIMIT,
+                'category_filter': 'restaurants'
+            }
+            print "url_params {}".format(url_params)
+
+            results_by_term[term[i]] = self.api_request(API_HOST,SEARCH_PATH, url_params=url_params)
+
         template = jinja_environment.get_template('results.html')
-        self.response.write(template.render({'results_list' : result_dictionary}))
+        self.response.write(template.render({'results_list' : results_by_term}))
+
+    def api_request(self, host, path, url_params=None):
+        """Prepares OAuth authentication and sends the request to the API.
+        Args:
+            host (str): The domain host of the API.
+            path (str): The path of the API after the domain.
+            url_params (dict): An optional set of query parameters in the request.
+        Returns:
+            dict: The JSON response from the request.
+        Raises:
+            urllib2.HTTPError: An error occurs from the HTTP request.
+        """
+        url_params = url_params or {}
+        url = 'http://{0}{1}?'.format(host, urllib.quote(path.encode('utf8')))
+        print 'params: {}'.format(url_params)
+
+        consumer = oauth2.Consumer(CONSUMER_KEY, CONSUMER_SECRET)
+        oauth_request = oauth2.Request(method="GET", url=url, parameters=url_params)
+
+        oauth_request.update(
+            {
+                'oauth_nonce': oauth2.generate_nonce(),
+                'oauth_timestamp': oauth2.generate_timestamp(),
+                'oauth_token': TOKEN,
+                'oauth_consumer_key': CONSUMER_KEY
+            }
+        )
+        token = oauth2.Token(TOKEN, TOKEN_SECRET)
+        oauth_request.sign_request(oauth2.SignatureMethod_HMAC_SHA1(), consumer, token)
+        signed_url = oauth_request.to_url()
+
+        print u'Querying {0} ...'.format(url)
+
+        conn = urllib2.urlopen(signed_url, None)
+        try:
+            response = json.loads(conn.read())
+        finally:
+            conn.close()
+
+        return response
 
 class DeveloperHandler(webapp2.RequestHandler):
     def get(self):
