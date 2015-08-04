@@ -104,6 +104,10 @@ div.image_container {
   text-align: center;
 }
 
+div.developer_paragraphs {
+  margin-left: 5%;
+}
+
 /*reference page*/
 #reference_page_logo {
   font-family: 'Waiting for the Sunrise', sans-serif;
