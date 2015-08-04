@@ -79,6 +79,10 @@ h1 {
   z-index: -1;
 }
 
+.developer_names {
+  text-align: center;
+}
+
 #developers_info{
   -webkit-column-count: 3;
   column-count: 3;
