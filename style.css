@@ -81,7 +81,7 @@
 
 #developers_header {
   font-family: 'Waiting for the Sunrise', sans-serif;
-  margin-top: 75px;
+  margin-top: 5%;
   text-align: center;
 }
 
@@ -97,6 +97,7 @@
 
 .column {
   display: inline-block;
+  margin-left: 5%;
 }
 
 div.image_container {
