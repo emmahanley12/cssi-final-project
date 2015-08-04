@@ -31,8 +31,7 @@ h1 {
 
 #logo {
   text-align: center;
-  margin-right: 25%;
-  margin-left: 25%;
+  margin-right: 15%;
 }
 
 #developers {
@@ -42,7 +41,7 @@ h1 {
 
 #references {
   text-align: right;
-  margin-right: 5%;
+  margin-right: 15%;
 }
 
 .block{

@@ -9,6 +9,11 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script>
+      $('.carousel').carousel({
+        interval: 3000
+      })
+    </script>
   </head>
 
   <body>
@@ -23,7 +28,15 @@
      <div class="blurb">The ultimate app to get you to stop wasting time on indecision and find the perfect plan for a fun night out.</div>
     <p class="blurb" id="enter"><a href="foodtype">Enter to find the perfect restaurant!</a></p>
 
-     <!-- carousel -->
+    <!-- carousel indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+     <!-- carousel images -->
      <section class="block">
          <div id="myCarousel" class="carousel slide">
              <div class="carousel-inner">
