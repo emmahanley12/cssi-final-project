@@ -80,12 +80,7 @@
   font-size: 130%;
 }
 
-<<<<<<< HEAD
-/*developer's page*/
-=======
-
-/*developer's page and developer info on homepage*/
->>>>>>> 4c84fa993c2ff7321a5bc0ddfc047af16791095f
+/*developer info on homepage*/
 .developers_page {
   font-family: 'Waiting for the Sunrise', sans-serif;
   display: inline-block;
