@@ -5,15 +5,11 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script>
-      $('.carousel').carousel({
-        interval: 3000
-      })
-    </script>
   </head>
 
   <body>
@@ -22,19 +18,19 @@
        <p class="blurb" id="logo"><a href="/">Return to Homepage</a></p>
        <p class="blurb" id="references"><a href="/references">References</a></p>
     </div>
-     <p>
+    <p>
        <h1 id="homepageh1">So, what are YOU doing tonight?</h1>
-     </p>
-     <div class="blurb" id="ultimate">The ultimate app to get you to stop wasting time on indecision and find the perfect plan for a fun night out.</div>
+    </p>
+    <div class="blurb" id="ultimate">The ultimate app to get you to stop wasting time on indecision and find the perfect plan for a fun night out.</div>
     <p class="blurb" id="enter"><a href="foodtype">Enter to find the perfect restaurant!</a></p>
 
     <!-- carousel indicators -->
+    <div id="transition-timer-carousel" class="carousel slide transition-timer-carousel" data-ride="carousel">
     <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class ="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-      <li data-target="#myCarousel" data-slide-to="3"></li>
-    </ol>
+				<li data-target="#transition-timer-carousel" data-slide-to="0" class="active"></li>
+				<li data-target="#transition-timer-carousel" data-slide-to="1"></li>
+				<li data-target="#transition-timer-carousel" data-slide-to="2"></li>
+		</ol>
 
      <!-- carousel images -->
      <section class="block">
@@ -55,6 +51,9 @@
              </div>
          </div>
      </section>
+
+     <!-- timer bar -->
+    <hr class="transition-timer-carousel-progress-bar animate" />
      <!-- end of carousel -->
 
    </body>
