@@ -53,19 +53,6 @@
   margin-top: -1.5%;
 }
 
-.developer_names {
-  text-align: center;
-}
-
-#developers_info{
-  -webkit-column-count: 3;
-  column-count: 3;
-}
-
-.column {
-  display: inline-block;
-}
-
 .carousel .item img {
      width: 100%;
 }
@@ -80,26 +67,39 @@
 
 
 /*developer's page*/
-
-#developers_header {
-  font-family: 'Waiting for the Sunrise', sans-serif;
-  margin-top: 50px;
-}
-
 .developers_page {
   font-family: 'Waiting for the Sunrise', sans-serif;
   display: inline-block;
 }
+
+#developers_header {
+  font-family: 'Waiting for the Sunrise', sans-serif;
+  margin-top: 75px;
+  text-align: center;
+}
+
+.developer_names {
+  text-align: center;
+}
+
 #developers_info{
   -webkit-column-count: 3;
   column-count: 3;
+}
+
+.column {
+  display: inline-block;
+}
+
+div.image_container {
+  height: 315px;
+  text-align: center;
 }
 
 /*reference page*/
 #reference_page_logo {
   font-family: 'Waiting for the Sunrise', sans-serif;
   margin-left: 46%;
-
 }
 
 #reference_header {
