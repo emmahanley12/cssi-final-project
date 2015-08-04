@@ -113,6 +113,16 @@ class ResultsHandler(BaseHandler):
         template = jinja_environment.get_template('results.html')
         self.response.write(template.render({'results_list' : self.session}))
 
+class DeveloperHandler(webapp2.RequestHandler):
+    def get(self):
+        template = jinja_environment.get_template('developers.html')
+        self.response.write(template.render())
+
+class ReferenceHandler(webapp2.RequestHandler):
+    def get(self):
+        template = jinja_environment.get_template('references.html')
+        self.response.write(template.render())
+
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
@@ -123,5 +133,7 @@ app = webapp2.WSGIApplication([
     ('/foodservice', ServiceHandler),
     ('/foodreservation', ReservationHandler),
     ('/foodother', OtherHandler),
-    ('/results', ResultsHandler)
+    ('/results', ResultsHandler),
+    ('/developers', DeveloperHandler),
+    ('/references', ReferenceHandler)
 ], config=config, debug=True)
