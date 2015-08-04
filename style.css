@@ -4,28 +4,18 @@ body {
   margin-top: -1%;
 }
 
-#logo, #developers, #references, .blurb, h1 {
+#logo, #developers, #references, #enter, .blurb, h1 {
   position: absolute;
   width: 100%;
   z-index: 1;
   color: cornflowerblue;
-}
-
-h1 {
   font-family: 'Waiting for the Sunrise', sans-serif;
-  text-align: center;
-  font-size: 310%;
-  top: 35%;
   margin-bottom: 0;
-  font-weight: strong;
 }
 
 #logo, #developers, #references {
-  font-family: 'Waiting for the Sunrise', sans-serif;
-  text-align: center;
   font-size: 130%;
   width: 40%
-  width: 40%;
   display: inline-block;
 }
 
@@ -44,10 +34,9 @@ h1 {
   margin-right: 15%;
 }
 
-.block{
-  -webkit-filter: blur(2px);
-  filter: blur(2px);
-  z-index: -1;
+#enter{
+  top: 75%;
+  margin-bottom: 0;
 }
 
 .blurb{
@@ -58,9 +47,17 @@ h1 {
   margin-bottom: 0;
 }
 
-#enter{
-  top: 75%;
-  margin-bottom: 0;
+h1 {
+  text-align: center;
+  font-size: 310%;
+  top: 35%;
+  font-weight: strong;
+}
+
+.block{
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+  z-index: -1;
 }
 
 #developers_info{
@@ -107,5 +104,4 @@ carousel.item {
 
 .refpagewords {
   font-family: 'Waiting for the Sunrise', sans-serif;
-<<<<<<< HEAD
  }
