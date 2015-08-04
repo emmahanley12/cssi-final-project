@@ -2,7 +2,7 @@
 
 /*homepage*/
 
-#logo, #developers, #references, #enter, #ultimate, #homepageh1 {
+#logo, #references, #enter, #ultimate, #homepageh1 {
   position: absolute;
   z-index: 1;
   color: cornflowerblue;
@@ -36,12 +36,6 @@
   font-size: 175%;
 }
 
-#developers{
-  margin-left: 6%;
-  margin-top: 2%;
-  font-size: 150%;
-}
-
 #logo{
   margin-left: 44%;
   margin-top: 2%;
@@ -56,8 +50,8 @@
 
 /*carousel*/
 .block{
-  -webkit-filter: blur(2px);
-  filter: blur(2px);
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
   z-index: -1;
   margin-top: -1.5%;
 }
