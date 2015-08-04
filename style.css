@@ -23,6 +23,7 @@ h1 {
   font-family: 'Waiting for the Sunrise', sans-serif;
   text-align: center;
   font-size: 130%;
+  width: 40%
   width: 40%;
   display: inline-block;
 }
@@ -47,8 +48,9 @@ h1 {
   -webkit-filter: blur(1px);
   filter: blur(1px);
   z-index: -1;
+}
 
-.blurb {
+.blurb{
   font-family: 'Waiting for the Sunrise', sans-serif;
   text-align: center;
   font-size: 140%;
@@ -74,24 +76,26 @@ h1 {
   height: 320px;
 }
 
-carousel .item {
-    width: 100%;
-    max-height: 600px;
+ carousel .item {
+     width: 100%;
+     max-height: 600px;
 }
 
 .carousel .item img {
-    width: 100%;
+     width: 100%;
 }
 
-.carousel .carousel-control {
-    background: none;
-    border: none;
-    top: 50%;
+ .carousel .carousel-control {
+     background: none;
+     border: none;
+     top: 50%;
 }
-@media (max-width: 767px) {
-    .block {
-        margin-left: -20px;
-        margin-right: -20px;
+
+ @media (max-width: 767px) {
+     .block {
+         margin-left: -20px;
+         margin-right: -20px;
+    }
 }
 
 #cssiteam {
@@ -102,4 +106,4 @@ carousel .item {
 
 .refpagewords {
   font-family: 'Waiting for the Sunrise', sans-serif;
-}
+ }
