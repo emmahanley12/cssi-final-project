@@ -41,9 +41,10 @@ body {
 #enter{
   top: 75%;
   margin-bottom: 0;
+  text-align: center;
 }
 
-.blurb{
+#ultimate{
   font-family: 'Waiting for the Sunrise', sans-serif;
   text-align: center;
   font-size: 140%;
