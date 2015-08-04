@@ -1,6 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise);
 
 /*homepage*/
+
 #logo, #developers, #references, #enter, #ultimate, #homepageh1 {
   position: absolute;
   z-index: 1;
@@ -24,7 +25,7 @@
 #ultimate{
   font-family: 'Waiting for the Sunrise', sans-serif;
   text-align: center;
-  font-size: 160%;
+  font-size: 170%;
   margin-top: 26%;
 }
 
@@ -32,6 +33,7 @@
   margin-top: 40%;
   font-size: 150%;
   font-weight: strong;
+  font-size: 175%;
 }
 
 #developers{
@@ -75,9 +77,15 @@
 .blurb{
   font-family: 'Waiting for the Sunrise', sans-serif;
   text-align: center;
+  font-size: 130%;
 }
 
+<<<<<<< HEAD
 /*developer's page*/
+=======
+
+/*developer's page and developer info on homepage*/
+>>>>>>> 4c84fa993c2ff7321a5bc0ddfc047af16791095f
 .developers_page {
   font-family: 'Waiting for the Sunrise', sans-serif;
   display: inline-block;
@@ -92,6 +100,7 @@
 .developer_names {
   text-align: center;
   color: cornflowerblue;
+  font-family: 'Waiting for the Sunrise', sans-serif;
 }
 
 #developers_info{
@@ -122,6 +131,7 @@ div.developer_paragraphs {
 #reference_page_logo {
   font-family: 'Waiting for the Sunrise', sans-serif;
   margin-left: 46%;
+  font-size: 120%;
 }
 
 #reference_header {
