@@ -17,7 +17,7 @@
   display: inline-block;
 }
 
-#logo, #developers, #references, #enter, .blurb, #homepagebody{
+#logo, #developers, #references, #enter, .blurb, #homepageh1 {
   position: absolute;
   width: 100%;
   z-index: 1;
