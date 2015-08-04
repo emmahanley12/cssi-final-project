@@ -10,6 +10,7 @@
 
 #developers_header {
   font-family: 'Waiting for the Sunrise', sans-serif;
+  margin-top: 50px;
 }
 
 .developers_page {
@@ -30,6 +31,7 @@
   font-size: 130%;
   width: 40%
   display: inline-block;
+  margin-top: 10px;
 }
 
 #logo {
@@ -89,7 +91,6 @@ h1 {
 .image_container {
   height: 320px;
 }
-
 
 carousel.item {
      width: 100%;
