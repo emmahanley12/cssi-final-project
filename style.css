@@ -37,16 +37,19 @@
 #developers{
   margin-left: 6%;
   margin-top: 2%;
+  font-size: 150%;
 }
 
 #logo{
   margin-left: 44%;
   margin-top: 2%;
+  font-size: 150%;
 }
 
 #references{
   margin-left: 88%;
   margin-top: 2%;
+  font-size: 150%;
 }
 
 /*carousel*/
@@ -84,6 +87,7 @@
 
 .developer_names {
   text-align: center;
+  color: cornflowerblue;
 }
 
 #developers_info{
