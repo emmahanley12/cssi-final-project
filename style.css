@@ -9,6 +9,10 @@
 }
 
 #homepageh1, #ultimate, #enter {
+  width: 100%;
+  display: block;
+  text-align: center;
+  text-shadow: 1px 1px 1px black;
 }
 
 #homepageh1 {
