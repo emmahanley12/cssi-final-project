@@ -77,20 +77,6 @@
     }
 }
 
-#reference_header {
-  margin-top: 50px;
-}
-
-div#APIreferences {
-  -webkit-column-count: 2;
-  column-count: 2;
-  margin-left: 200px;
-}
-
-div#cssiteam {
-  -webkit-column-count: 5;
-  column-count: 5;
-
 /*the question pages*/
 
 
@@ -111,11 +97,29 @@ div#cssiteam {
 }
 
 /*reference page*/
-#cssiteam {
+
+#reference_header {
+  margin-top: 50px;
   font-family: 'Waiting for the Sunrise', sans-serif;
+  text-align: center;
+}
+
+div#APIreferences {
+  -webkit-column-count: 2;
+  column-count: 2;
+  margin-left: 200px;
+}
+
+div#cssiteam {
+  -webkit-column-count: 5;
+  column-count: 5;
 }
 
 .refpagewords {
   font-family: 'Waiting for the Sunrise', sans-serif;
   text-align: center;
  }
+
+#cssiteam {
+  font-family: 'Waiting for the Sunrise', sans-serif;
+}
