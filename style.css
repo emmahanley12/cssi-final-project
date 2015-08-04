@@ -4,6 +4,10 @@ body {
   margin-top: -1%;
 }
 
+body#questionpagebackground {
+  background-image: url("NYCblue.png");
+}
+
 #logo, #developers, #references, .blurb, h1 {
   position: absolute;
   width: 100%;
@@ -102,11 +106,8 @@ carousel.item {
 
 #cssiteam {
   font-family: 'Waiting for the Sunrise', sans-serif;
-  -webkit-column-count: 5;
-  column-count: 5;
 }
 
 .refpagewords {
   font-family: 'Waiting for the Sunrise', sans-serif;
-<<<<<<< HEAD
  }
