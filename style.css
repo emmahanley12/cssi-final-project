@@ -119,10 +119,23 @@ carousel.item {
     }
 }
 
-#cssiteam {
+#reference_header {
+  margin-top: 50px;
+}
+
+div#APIreferences {
+  -webkit-column-count: 2;
+  column-count: 2;
+  margin-left: 200px;
+}
+
+div#cssiteam {
+  -webkit-column-count: 5;
+  column-count: 5;
   font-family: 'Waiting for the Sunrise', sans-serif;
 }
 
 .refpagewords {
   font-family: 'Waiting for the Sunrise', sans-serif;
+  text-align: center;
  }
