@@ -8,6 +8,15 @@ body {
   background-image: url("NYCblue.png");
 }
 
+#developers_header {
+  font-family: 'Waiting for the Sunrise', sans-serif;
+}
+
+.developers_page {
+  font-family: 'Waiting for the Sunrise', sans-serif;
+  display: inline-block;
+}
+
 #logo, #developers, #references, #enter, .blurb, h1 {
   position: absolute;
   width: 100%;
@@ -25,7 +34,6 @@ body {
 
 #logo {
   text-align: center;
-  margin-right: 15%;
 }
 
 #developers {
