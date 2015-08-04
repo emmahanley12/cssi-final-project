@@ -1,82 +1,50 @@
 @import url(http://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise);
 
-#homepagebody {
-  margin-top: -1%;
-}
-
-#questionpagebackground {
-  background-image: url("NYCblue.png");
-}
-
-#developers_header {
-  font-family: 'Waiting for the Sunrise', sans-serif;
-  margin-top: 50px;
-}
-
-.developers_page {
-  font-family: 'Waiting for the Sunrise', sans-serif;
-  display: inline-block;
-}
-
-#logo, #developers, #references, #enter, .blurb, #homepageh1 {
+/*homepage*/
+#logo, #developers, #references, #enter, #ultimate, #homepageh1 {
   position: absolute;
-  width: 100%;
   z-index: 1;
   color: cornflowerblue;
   font-family: 'Waiting for the Sunrise', sans-serif;
-  margin-bottom: 0;
 }
 
-#logo, #developers, #references {
-  font-size: 130%;
-  width: 40%
-  display: inline-block;
-  margin-top: 10px;
-}
-
-#logo {
-  text-align: center;
-}
-
-#developers {
-  text-align: left;
-  margin-left: 5%;
-}
-
-#references {
-  text-align: right;
-  margin-right: 15%;
-}
-
-#enter{
-  top: 75%;
-  margin-bottom: 0;
-  text-align: center;
-}
-
-.blurb {
-  text-align: center;
+#homepageh1 {
+  font-weight: strong;
+  font-size: 310%;
+  margin-top: 20%;
 }
 
 #ultimate{
   font-family: 'Waiting for the Sunrise', sans-serif;
   text-align: center;
-  font-size: 140%;
-  top: 50%;
-  margin-bottom: 0;
+  font-size: 115%;
+  margin-top: 26%;
 }
 
-h1 {
-  text-align: center;
-  font-size: 310%;
-  top: 35%;
+#enter{
+  margin-top: 40%;
+  font-size: 150%;
   font-weight: strong;
 }
 
+#developers{
+  margin-left: 6%;
+}
+
+#logo{
+  margin-left: 44%;
+}
+
+#references{
+  margin-left: 88%;
+}
+
+/*carousel*/
 .block{
   -webkit-filter: blur(2px);
   filter: blur(2px);
   z-index: -1;
+  margin-top: -1.5%;
 }
 
 .developer_names {
@@ -92,24 +60,8 @@ h1 {
   display: inline-block;
 }
 
-.image_container {
-  height: 320px;
-}
-
-carousel.item {
-     width: 100%;
-     max-height: 600px;
-     .transition(.6s ease-in-out left);
-}
-
 .carousel .item img {
      width: 100%;
-}
-
-.carousel .carousel-control {
-     background: none;
-     border: none;
-     top: 50%;
 }
 
  @media (max-width: 767px) {
@@ -119,6 +71,7 @@ carousel.item {
     }
 }
 
+<<<<<<< HEAD
 #reference_header {
   margin-top: 50px;
 }
@@ -132,6 +85,30 @@ div#APIreferences {
 div#cssiteam {
   -webkit-column-count: 5;
   column-count: 5;
+=======
+/*the question pages*/
+#questionpagebackground {
+  background-image: url("NYCblue.png");
+}
+
+/*developer's page*/
+#developers_header {
+  font-family: 'Waiting for the Sunrise', sans-serif;
+  margin-top: 50px;
+}
+
+.developers_page {
+  font-family: 'Waiting for the Sunrise', sans-serif;
+  display: inline-block;
+}
+#developers_info{
+  -webkit-column-count: 3;
+  column-count: 3;
+}
+
+/*reference page*/
+#cssiteam {
+>>>>>>> e261e05b2d7313ecda4179cd5ef2462109344ac4
   font-family: 'Waiting for the Sunrise', sans-serif;
 }
 
