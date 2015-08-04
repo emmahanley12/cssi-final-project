@@ -70,7 +70,11 @@
          margin-right: -20px;
     }
 }
+
 /*the question pages*/
+.blurb{
+
+}
 
 
 /*developer's page*/
@@ -107,6 +111,10 @@ div.image_container {
 div.developer_paragraphs {
   margin-left: 5%;
   font-size: 120%;
+}
+
+.column {
+  width: 100%;
 }
 
 /*reference page*/
