@@ -7,7 +7,14 @@
     <h2>Results</h2>
     <ul>
       {% for result in results_list %}
-      <li>{{result}}: {{ results_list[result] }}</li>
+
+        <ol>
+        {% for business in results_list[result]['businesses'] %}
+          <h1>{{business['name']}}</h1>
+          <li>{{business.rating}}</li>
+          <hr>
+        {% endfor %}
+        </ol>
       {% endfor %}
     </ul>
   </body>
