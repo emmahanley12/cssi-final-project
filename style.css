@@ -171,8 +171,3 @@ div#cssiteam {
  .developer_img {
    border-radius: 150px;
  }
-
- .when-checked:checked {
-   color: white;
-   background-color: black;
- }

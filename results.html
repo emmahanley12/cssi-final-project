@@ -9,7 +9,7 @@
         {% for result in results_list %}
 
         {% for business in results_list[result]['businesses'] %}
-          <li><h1>{{business['name']}}</h1></li>
+          <li><h1><a href="{{business.url}}">{{business['name']}}</a></h1></li>
           <ul>
             <li><img src="{{business.rating_img_url}}"></li>
             <li>{{business.display_phone}}</li>
