@@ -121,6 +121,7 @@ h1, #enter{
   font-family: 'Waiting for the Sunrise', sans-serif;
   margin-top: 5%;
   text-align: center;
+  color: cornflowerblue;
 }
 
 #developers_info{
@@ -163,6 +164,7 @@ div.developer_paragraphs {
   font-family: 'Waiting for the Sunrise', sans-serif;
   text-align: center;
   font-weight: bold;
+  color: cornflowerblue;
 }
 
 div#APIreferences {
