@@ -170,12 +170,19 @@ div.developer_paragraphs {
   font-family: 'Waiting for the Sunrise', sans-serif;
   text-align: center;
   font-weight: bold;
+  color: cornflowerblue;
 }
 
 div#APIreferences {
   -webkit-column-count: 2;
   column-count: 2;
   margin-left: 200px;
+}
+
+#cssiteam_header {
+  font-family: 'Waiting for the Sunrise', sans-serif;
+  text-align: center;
+  color: cornflowerblue;
 }
 
 div#cssiteam_info {
