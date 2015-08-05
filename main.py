@@ -105,24 +105,6 @@ class AttireHandler(BaseHandler):
 
     def post(self):
         self.session['food_attire'] = self.request.get_all('attire')
-        self.redirect('foodservice')
-
-class ServiceHandler(BaseHandler):
-    def get(self):
-        template = jinja_environment.get_template('questions-form-service.html')
-        self.response.write(template.render())
-
-    def post(self):
-        self.session['food_service'] = self.request.get_all('service')
-        self.redirect('foodreservation')
-
-class ReservationHandler(BaseHandler):
-    def get(self):
-        template = jinja_environment.get_template('questions-form-reservation.html')
-        self.response.write(template.render())
-
-    def post(self):
-        self.session['food_reservation'] = self.request.get_all('reservation')
         self.redirect('foodother')
 
 class OtherHandler(BaseHandler):
@@ -216,8 +198,6 @@ app = webapp2.WSGIApplication([
     ('/foodprice', PricesHandler),
     ('/fooddistance', DistanceHandler),
     ('/foodattire', AttireHandler),
-    ('/foodservice', ServiceHandler),
-    ('/foodreservation', ReservationHandler),
     ('/foodother', OtherHandler),
     ('/results', ResultsHandler),
     ('/developers', DeveloperHandler),
