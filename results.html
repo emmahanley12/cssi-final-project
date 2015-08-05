@@ -5,17 +5,22 @@
 <head>
   <body>
     <h2>Results</h2>
-    <ul>
-      {% for result in results_list %}
+      <ol>
+        {% for result in results_list %}
 
-        <ol>
         {% for business in results_list[result]['businesses'] %}
-          <h1>{{business['name']}}</h1>
-          <li>{{business.rating}}</li>
+          <li><h1>{{business['name']}}</h1></li>
+          <ul>
+            <li><img src="{{business.rating_img_url}}"></li>
+            <li>{{business.display_phone}}</li>
+            <li>{{business.location.display_address[0]}}<br>
+                {{business.location.display_address[1]}}<br>
+                {{business.location.display_address[2]}}
+            <li>{{business.snippet_text}}</li>
+          </ul>
           <hr>
+          {% endfor %}
         {% endfor %}
-        </ol>
-      {% endfor %}
-    </ul>
+      </ol>
   </body>
 </html>
