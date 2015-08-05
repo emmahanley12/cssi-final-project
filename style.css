@@ -9,7 +9,7 @@ form {
 }
 
 /*homepage*/
-a {
+div.homepage_links a {
   color: white;
 }
 
@@ -34,14 +34,18 @@ h1, #enter{
   position: absolute;
   z-index: 1;
   color: white;
+  text-align: center;
   font-family: 'Waiting for the Sunrise', sans-serif;
 }
 
 #homepageh1, #ultimate, #enter {
   width: 100%;
   display: block;
-  text-align: center;
   text-shadow: 1px 1px 1px black;
+}
+
+#enter {
+  background-color: #00FFFF;
 }
 
 #homepageh1 {
@@ -106,6 +110,10 @@ h1, #enter{
   font-size: 150%;
 }
 
+.question_page_headers {
+  color: cornflowerblue;
+}
+
 #food_type_list {
   -webkit-column-count: 2;
   column-count: 2;
@@ -125,6 +133,7 @@ h1, #enter{
   font-family: 'Waiting for the Sunrise', sans-serif;
   margin-top: 5%;
   text-align: center;
+  color: cornflowerblue;
 }
 
 #developers_info{
@@ -167,6 +176,7 @@ div.developer_paragraphs {
   font-family: 'Waiting for the Sunrise', sans-serif;
   text-align: center;
   font-weight: bold;
+  color: cornflowerblue;
 }
 
 div#APIreferences {
@@ -203,4 +213,8 @@ div#cssiteam_info {
   font-family: 'Waiting for the Sunrise', sans-serif;
   font-weight: bolder;
   font-size: 120%;
+}
+
+div.centering {
+  width: 100%;
 }
