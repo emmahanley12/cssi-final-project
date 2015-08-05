@@ -94,6 +94,10 @@ h1, #enter{
   font-size: 150%;
 }
 
+.question_page_headers {
+  color: cornflowerblue;
+}
+
 #food_type_list {
   -webkit-column-count: 2;
   column-count: 2;
