@@ -1,26 +1,17 @@
 @import url(http://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise);
 
-body {
-  margin:0;
-}
-
-form {
-
-}
-
 /*homepage*/
+
 div.homepage_links a {
   color: white;
 }
 
 h1, #enter{
   text-transform:uppercase;
-  margin: 0;
 }
 
 a:hover {
   text-decoration: none;
-  font-weight: 300;
 }
 
 #nycskyline{
@@ -28,11 +19,7 @@ a:hover {
   width: 100%;
   height:100%;
   z-index: -1;
-  margin-top:
   margin-bottom: 0;
-  position: absolute;
-  bottom: 0;
-  left: 0;
 }
 
 #logo, #references, #enter, #ultimate, #homepageh1 {
@@ -141,7 +128,6 @@ a:hover {
   font-family: 'Waiting for the Sunrise', sans-serif;
   margin-top: 5%;
   text-align: center;
-  color: cornflowerblue;
 }
 
 #developers_info{
@@ -184,7 +170,6 @@ div.developer_paragraphs {
   font-family: 'Waiting for the Sunrise', sans-serif;
   text-align: center;
   font-weight: bold;
-  color: cornflowerblue;
 }
 
 div#APIreferences {
