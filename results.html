@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Service</title>
+  <title>Results</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 <head>
   <body>
-    <h2>Results</h2>
+    <h2 id="results_header">Results: take your pick!</h2>
+<head>
+  <body>
       <ol>
         {% for result in results_list %}
-
+        <div class="results">
         {% for business in results_list[result]['businesses'] %}
           <li><h1><a href="{{business.url}}">{{business['name']}}</a></h1></li>
           <ul>
@@ -20,6 +23,7 @@
           </ul>
           <hr>
           {% endfor %}
+        </div>
         {% endfor %}
       </ol>
   </body>

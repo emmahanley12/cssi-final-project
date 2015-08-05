@@ -1,6 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise);
 
 /*homepage*/
+
+a {
+  color: white;
+}
+
 h1, #enter{
   text-transform:uppercase;
 }
@@ -85,6 +90,7 @@ h1, #enter{
 #image1, #image2, #image3 {
   opacity: 1;
 }
+
 /*the question pages*/
 .blurb{
   font-family: 'Waiting for the Sunrise', sans-serif;
@@ -99,10 +105,6 @@ h1, #enter{
   column-gap: 10px;
   margin-left: 30%;
   margin-right: 30%;
-}
-
-.question_page_headers {
-  color: cornflowerblue;
 }
 
 /*developer info on homepage*/
@@ -135,6 +137,10 @@ div.image_container {
 div.developer_paragraphs {
   margin-left: 5%;
   font-size: 120%;
+}
+
+.developer_img {
+  border-radius: 150px;
 }
 
 .column {
@@ -175,3 +181,18 @@ div#cssiteam_info {
  .developer_img {
    border-radius: 150px;
  }
+
+/*results page*/
+
+#results_header {
+  font-family: 'Waiting for the Sunrise', sans-serif;
+  color: cornflowerblue;
+  text-align: center;
+  font-size: 250%;
+}
+
+.results {
+  font-family: 'Waiting for the Sunrise', sans-serif;
+  font-weight: bolder;
+  font-size: 120%;
+}
