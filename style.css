@@ -28,8 +28,11 @@ h1, #enter{
 #homepageh1, #ultimate, #enter {
   width: 100%;
   display: block;
-  text-align: center;
   text-shadow: 1px 1px 1px black;
+}
+
+#enter {
+  background-color: #00FFFF;
 }
 
 #homepageh1 {
@@ -195,4 +198,8 @@ div#cssiteam_info {
   font-family: 'Waiting for the Sunrise', sans-serif;
   font-weight: bolder;
   font-size: 120%;
+}
+
+div.centering {
+  width: 100%;
 }
