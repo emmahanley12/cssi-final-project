@@ -97,6 +97,10 @@ h1, #enter{
   margin-right: 30%;
 }
 
+.question_page_headers {
+  color: cornflowerblue;
+}
+
 /*developer info on homepage*/
 .developers_page {
   font-family: 'Waiting for the Sunrise', sans-serif;
