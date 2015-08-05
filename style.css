@@ -27,6 +27,10 @@ h1, #enter{
   text-shadow: 1px 1px 1px black;
 }
 
+#enter {
+  background-color: #00FFFF;
+}
+
 #homepageh1 {
   font-weight: strong;
   font-size: 310%;
