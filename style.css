@@ -149,3 +149,7 @@ div#cssiteam {
   font-family: 'Waiting for the Sunrise', sans-serif;
   text-align: center;
  }
+
+ .developer_img {
+   border-radius: 150px;
+ }
