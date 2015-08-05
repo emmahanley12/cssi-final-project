@@ -10,6 +10,11 @@ h1, #enter{
   text-transform:uppercase;
 }
 
+a:hover {
+  text-decoration: none;
+  font-weight: 300;
+}
+
 #nycskyline{
   display: inline-block;
   width: 100%;
@@ -32,8 +37,11 @@ h1, #enter{
   text-shadow: 1px 1px 1px black;
 }
 
-#enter {
+#enter a{
   background-color: #00FFFF;
+  text-shadow: 1px 1px 1px black;
+  padding: 5px 10px ;
+  border-radius: 5px;
 }
 
 #homepageh1 {
@@ -199,8 +207,4 @@ div#cssiteam_info {
   font-family: 'Waiting for the Sunrise', sans-serif;
   font-weight: bolder;
   font-size: 120%;
-}
-
-div.centering {
-  width: 100%;
 }
