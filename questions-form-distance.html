@@ -2,20 +2,19 @@
 <html>
 <head>
   <title>Distance</title>
-<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
   <body class="blurb">
-    <link rel="stylesheet" type="text/css" href="style.css">
     <h2 class="question_page_headers">How far are you willing to go?</h2>
     <p class="question_page_headers">Please input your zip code:</p>
     <form method="post" action="/fooddistance">
         <p><input type="textarea" name="zipcode"></p>
       <div>
         <br>
-        <labeL><input type="radio" name="distance" value="1610">within 1 mile<br></labeL>
+        <labeL><input type="radio" name="distance" value="1610" checked>within 1 mile<br></labeL>
         <labeL><input type="radio" name="distance" value="8050">within 5 miles<br></labeL>
         <labeL><input type="radio" name="distance" value="16100">within 10 miles<br></labeL>
         <labeL><input type="radio" name="distance" value="32200">within 20 miles<br></labeL>
-        <labeL><input type="radio" name="distance">Anywhere in NYC<br></labeL>
       </div>
       <div><input type="submit" value="Next Question"></div>
     </form>
