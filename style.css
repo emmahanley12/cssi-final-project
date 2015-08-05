@@ -169,4 +169,21 @@ div#cssiteam_info {
   text-align: center;
  }
 
- /*results page*/
+ .developer_img {
+   border-radius: 150px;
+ }
+
+/*results page*/
+
+#results_header {
+  font-family: 'Waiting for the Sunrise', sans-serif;
+  color: cornflowerblue;
+  text-align: center;
+  font-size: 250%;
+}
+
+.results {
+  font-family: 'Waiting for the Sunrise', sans-serif;
+  font-weight: bolder;
+  font-size: 120%;
+}
