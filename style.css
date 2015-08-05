@@ -4,6 +4,7 @@
 h1, #enter{
   text-transform:uppercase;
 }
+
 #logo, #references, #enter, #ultimate, #homepageh1 {
   position: absolute;
   z-index: 1;
