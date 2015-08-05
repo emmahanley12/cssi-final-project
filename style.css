@@ -22,6 +22,7 @@ h1, #enter{
   position: absolute;
   z-index: 1;
   color: white;
+  text-align: center;
   font-family: 'Waiting for the Sunrise', sans-serif;
 }
 
