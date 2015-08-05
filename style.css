@@ -168,6 +168,10 @@ div#cssiteam_info {
   text-align: center;
  }
 
+ #referencebody {
+   margin: 0;
+ }
+
  .developer_img {
    border-radius: 150px;
  }
