@@ -30,7 +30,7 @@ results = {}
 API_HOST = 'api.yelp.com'
 DEFAULT_TERM = 'dinner'
 DEFAULT_LOCATION = 'San Francisco, CA'
-SEARCH_LIMIT = 5
+SEARCH_LIMIT = 15
 SEARCH_PATH = '/v2/search/'
 BUSINESS_PATH = '/v2/business/'
 
@@ -77,7 +77,7 @@ class TypeHandler(BaseHandler):
     def post(self):
         self.session['food_types'] = self.request.get_all('type')
         self.redirect("results")
-        print self.session['food_types']
+        self.redirect('foodprice')
 
 class PricesHandler(BaseHandler):
     def get(self):
@@ -95,6 +95,7 @@ class DistanceHandler(BaseHandler):
 
     def post(self):
         self.session['food_distance'] = self.request.get('distance')
+        self.session['food_zip'] = self.request.get('zipcode')
         self.redirect('foodattire')
 
 class AttireHandler(BaseHandler):
@@ -137,7 +138,8 @@ class ResultsHandler(BaseHandler):
     def get(self):
 
         term = self.session['food_types']
-        location = '10460'
+        location = self.session['food_zip']
+        radius_filter = self.session['food_distance']
 
         results_by_term = {}
         for i in range(len(term)):
@@ -145,9 +147,10 @@ class ResultsHandler(BaseHandler):
 
             url_params = {
                 'term': term[i],
-                'location': location.replace(' ', '+'),
+                'location': location,
                 'limit': SEARCH_LIMIT,
-                'category_filter': 'restaurants'
+                'category_filter': 'restaurants',
+                'radius_filter': radius_filter
             }
             print "url_params {}".format(url_params)
 
