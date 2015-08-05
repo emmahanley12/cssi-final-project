@@ -4,6 +4,7 @@
 h1, #enter{
   text-transform:uppercase;
 }
+
 #logo, #references, #enter, #ultimate, #homepageh1 {
   position: absolute;
   z-index: 1;
@@ -150,4 +151,8 @@ div#cssiteam {
 .refpagewords {
   font-family: 'Waiting for the Sunrise', sans-serif;
   text-align: center;
+ }
+
+ .developer_img {
+   border-radius: 150px;
  }
