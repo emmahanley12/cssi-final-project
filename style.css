@@ -5,10 +5,18 @@ h1, #enter{
   text-transform:uppercase;
 }
 
+#nycskyline{
+  display: inline-block;
+  width: 100%;
+  height:100%;
+  z-index: -1;
+  margin-bottom: 0;
+}
+
 #logo, #references, #enter, #ultimate, #homepageh1 {
   position: absolute;
   z-index: 1;
-  color: cornflowerblue;
+  color: white;
   font-family: 'Waiting for the Sunrise', sans-serif;
 }
 
@@ -90,12 +98,6 @@ h1, #enter{
   font-family: 'Waiting for the Sunrise', sans-serif;
   margin-top: 5%;
   text-align: center;
-}
-
-.developer_names {
-  text-align: center;
-  color: cornflowerblue;
-  font-family: 'Waiting for the Sunrise', sans-serif;
 }
 
 #developers_info{
