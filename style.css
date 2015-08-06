@@ -131,6 +131,16 @@ a:hover {
   margin-right: 30%;
 }
 
+.button {
+  font-family: 'Waiting for the Sunrise', sans-serif;
+  font-size: 80%;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 10px -1px 10px;
+  border: 1px solid cornflowerblue;
+  background-color: cornflowerblue;
+}
+
 /*developer info on homepage*/
 .developers_page {
   font-family: 'Waiting for the Sunrise', sans-serif;
