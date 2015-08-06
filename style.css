@@ -115,10 +115,6 @@ a:hover {
     }
 }
 
-#image1, #image2, #image3 {
-  opacity: 1;
-  max-height: 850px;
-}
 
 .carousel-fade .carousel-inner .item {
     transition-property: opacity;
@@ -308,7 +304,7 @@ div#cssiteam_info {
 }
 
 div.carousel-inner div img {
-  max-height: 1000px;
+  max-height: 835px;
 }
 
 #logo a img {
@@ -318,34 +314,45 @@ div.carousel-inner div img {
 
 
 /* carousel css */
-.carousel-fade .carousel-inner .item {
-    transition-property: opacity;
-  }
+.carousel-fade {
+    .carousel-inner {
+        .item {
+            transition-property: opacity;
+        }
 
-.item, .active.left, .active.right {
-  opacity: 0;
-  }
+        .item,
+        .active.left,
+        .active.right {
+            opacity: 0;
+        }
 
-.active,
-.next.left,
-.prev.right {
-    opacity: 1;
-}
+        .active,
+        .next.left,
+        .prev.right {
+            opacity: 1;
+        }
 
-.next,
-.prev,
-.active.left,
-.active.right {
-    left: 0;
-    transform: translate3d(0, 0, 0);
-}
+        .next,
+        .prev,
+        .active.left,
+        .active.right {
+            left: 0;
+            transform: translate3d(0, 0, 0);
+        }
+    }
 
     .carousel-control {
-        z-index: -1;
+        z-index: 2;
     }
+}
 
 .carousel,
 .carousel-inner,
 .carousel-inner .item {
     height: 100%;
+}
+
+#image1, #image2, #image3 {
+  opacity: 1;
+  max-height: 850px;
 }
