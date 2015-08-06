@@ -76,6 +76,10 @@ class TypeHandler(BaseHandler):
 
     def post(self):
         self.session['food_category'] = self.request.get_all('type')
+        type_textarea = self.request.get('type_textarea')
+        if type_textarea:
+            self.session['food_category'].append(type_textarea)
+
         self.redirect('foodprice')
 
 class PricesHandler(BaseHandler):
@@ -121,25 +125,26 @@ class ResultsHandler(BaseHandler):
         term = self.session['food_types']
         location = self.session['food_zip']
         radius_filter = self.session['food_distance']
+        category = self.session['food_category']
         category_str = ",".join(self.session['food_category'])
 
         print self.session['food_category']
         print category_str
 
         results_by_term = {}
-        for i in range(len(term)):
-            term[i] = term[i].replace(' ', '+')
+        for i in range(len(category)):
+            category[i] = category[i].replace(' ', '+')
 
             url_params = {
-                'term': term[i],
+                'term': "",
                 'location': location,
                 'limit': SEARCH_LIMIT,
-                'category_filter': self.session['food_types'],
+                'category_filter': category_str,
                 'radius_filter': radius_filter
             }
             print "url_params {}".format(url_params)
 
-            results_by_term[term[i]] = self.api_request(API_HOST,SEARCH_PATH, url_params=url_params)
+            results_by_term[category[i]] = self.api_request(API_HOST,SEARCH_PATH, url_params=url_params)
 
         template = jinja_environment.get_template('results.html')
         self.response.write(template.render({'results_list' : results_by_term}))
