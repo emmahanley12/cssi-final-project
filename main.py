@@ -136,7 +136,7 @@ class ResultsHandler(BaseHandler):
             category[i] = category[i].replace(' ', '+')
 
             url_params = {
-                'term': term,
+                'term': "",
                 'location': location,
                 'limit': SEARCH_LIMIT,
                 'category_filter': category_str,
