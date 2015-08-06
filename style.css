@@ -292,7 +292,7 @@ div#cssiteam_info {
    border-radius: 150px;
  }
 
- #cssiteam_header, #APIreferences, #results_header, .results {
+ #cssiteam_header, #APIreferences {
    background-color: rgba(255, 255, 255, 0.35);
    display: inline;
    text-align: center;
