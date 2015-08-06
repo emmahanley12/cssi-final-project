@@ -246,6 +246,11 @@ div.carousel-inner div img {
   max-height: 1000px;
 }
 
+#logo a img {
+  height: 100px;
+  width: 100px;
+  margin-left: -800px;
+}
 
 /* carousel css */
 
