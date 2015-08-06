@@ -1,5 +1,10 @@
 @import url(http://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise);
 
+body {
+  position: relative;
+  top: -10px;
+}
+
 html {
 
 }
@@ -16,6 +21,10 @@ h1, #enter{
 
 a:hover {
   text-decoration: none;
+}
+
+#homepageh1 {
+  visibility: hidden;
 }
 
 #nycskyline1{
@@ -41,7 +50,6 @@ a:hover {
 }
 
 #enter a{
-  /*background-color: cornflowerblue;*/
   text-shadow: 1px 1px 1px black;
   padding: 5px 10px ;
   border-radius: 5px;
@@ -50,7 +58,6 @@ a:hover {
 }
 
 #enter a:hover {
-  /*background-color: cornflowerblue;*/
   color: gray;
   background-color: white;
 }
@@ -80,7 +87,7 @@ a:hover {
 }
 
 #logo{
-  margin-left: 44%;
+  /*margin-left: 44%;*/
   margin-top: 2%;
   font-size: 150%;
 }
@@ -179,10 +186,20 @@ form {
   color: cornflowerblue;
 }
 
-#food_type_list, #price_list, #other_list, #distance_list, #attire_list {
+#food_type_list, #price_list, #other_list, #distance_list, #attire_list, #cssiteam_info {
     background-color: rgba(255, 255, 255, 0.35);
     display: inline-block;
     color: cornflowerblue;
+    border-radius: 100px;
+}
+
+#cssiteam_header, #APIreferences, #results_header, .results, {
+  background-color: rgba(255, 255, 255, 0.35);
+  display: inline;
+  text-align: center;
+  margin-left: 40%;
+  border-radius: 100px;
+
 }
 /*
 #food_type_list {
@@ -315,4 +332,44 @@ div#cssiteam_info {
 
 div.carousel-inner div img {
   max-height: 1000px;
+}
+
+#logo a img {
+  height: 100px;
+  width: 100px;
+  margin-left: 30px;
+
+
+/* carousel css */
+
+.carousel-fade .carousel-inner .item {
+    transition-property: opacity;
+  }
+
+.item, .active.left, .active.right {
+  opacity: 0;
+  }
+
+.active,
+.next.left,
+.prev.right {
+    opacity: 1;
+}
+
+.next,
+.prev,
+.active.left,
+.active.right {
+    left: 0;
+    transform: translate3d(0, 0, 0);
+}
+
+    .carousel-control {
+        z-index: -1;
+    }
+
+.carousel,
+.carousel-inner,
+.carousel-inner .item {
+    height: 100%;
 }
