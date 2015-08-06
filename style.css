@@ -1,5 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise);
 
+html {
+  position: relative;
+}
+
 /*homepage*/
 
 div.homepage_links a {
@@ -87,6 +91,13 @@ a:hover {
   font-size: 150%;
 }
 
+.bio {
+  width: 90%;
+  font-family: 'Waiting for the Sunrise', sans-serif;
+  text-align: center;
+  font-size: 150%;
+}
+
 /*carousel*/
 .block{
   -webkit-filter: blur(1px);
@@ -137,8 +148,6 @@ a:hover {
         z-index: -1;
     }
 
-html,
-body,
 .carousel,
 .carousel-inner,
 .carousel-inner .item {
@@ -146,14 +155,18 @@ body,
 }
 
 /*the question pages*/
+
+form {
+  height: 600px;
+}
+
 #nycskyline{
   display: inline-block;
   width: 100%;
-  height:100%;
   z-index: -1;
   margin-bottom: 0;
   bottom:0;
-  position: absolute;
+  position: fixed;
   left: 0;
 }
 
@@ -165,6 +178,12 @@ body,
 
 .question_page_headers {
   color: cornflowerblue;
+}
+
+#food_type_list, #price_list, #other_list, #distance_list, #attire_list {
+    background-color: rgba(255, 255, 255, 0.35);
+    display: inline-block;
+    color: cornflowerblue;
 }
 
 #food_type_list {
