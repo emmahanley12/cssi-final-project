@@ -9,7 +9,7 @@
     <p class="question_page_headers">Please input your zip code:</p>
     <form method="post" action="/fooddistance">
         <p><input type="textarea" name="zipcode"></p>
-      <div>
+      <div id="distance_list">
         <br>
         <labeL><input type="radio" name="distance" value="1610">within 1 mile<br></labeL>
         <labeL><input type="radio" name="distance" value="8050">within 5 miles<br></labeL>
@@ -17,11 +17,12 @@
         <labeL><input type="radio" name="distance" value="32200">within 20 miles<br></labeL>
       </div>
       <div><input type="submit" value="Next Question" class="button"></div>
+      <button onclick="goBack()" class="button">Previous Page</button>
     </form>
-    <button onclick="goBack()" class="button">Previous Question</button>
-    <img id="nycskyline" src= "http://www.icubemobile.com/images/amazing-city-skyline-clipart-2-new-york-city-skyline-silhouette-clip-art-3302-x-1242.jpg"/>
   </body>
 </html>
+
+<img id="nycskyline" src= "http://www.icubemobile.com/images/amazing-city-skyline-clipart-2-new-york-city-skyline-silhouette-clip-art-3302-x-1242.jpg"/>
 
 <script>
 function goBack() {

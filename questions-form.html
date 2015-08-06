@@ -7,8 +7,10 @@
   <body class="blurb">
     <h2 class="question_page_headers">Chicken Tikka Masala or Escargot? What kind of food do you want?</h2>
     <form method="post" action="/foodtype">
-      <div id="food_type_list">
-        <labeL><input type="checkbox" name="type" value="tradamerican">American<br></labeL>
+      <div id="food_type_list" >
+        <br>
+        <labeL><input type="checkbox" name="type" value="newamerican">New American<br></labeL>
+        <labeL><input type="checkbox" name="type" value="tradamerican">Traditional American<br></labeL>
         <labeL><input type="checkbox" name="type" value="british" >British<br></labeL>
         <labeL><input type="checkbox" name="type" value="caribbean" >Caribbean<br></labeL>
         <labeL><input type="checkbox" name="type" value="chinese" >Chinese<br></labeL>
@@ -27,12 +29,13 @@
         <labeL><input type="checkbox" name="type" value="vietnamese" >Vietnamese<br></labeL></labeL>
         <labeL>Other types: <input type="textarea" name="type_textarea"><br></labeL>
       </div>
-      <div><input type="submit" value="Next Question" class="button"></div>
+      <div><input type="submit" class="button" value="Next Question"></div>
+      <button onclick="goBack()" class="button">Previous Page</button>
     </form>
-    <button onclick="goBack()" class="button">Previous Page</button>
-    <img id="nycskyline" src= "http://www.icubemobile.com/images/amazing-city-skyline-clipart-2-new-york-city-skyline-silhouette-clip-art-3302-x-1242.jpg"/>
   </body>
 </html>
+
+<img id="nycskyline" src= "http://www.icubemobile.com/images/amazing-city-skyline-clipart-2-new-york-city-skyline-silhouette-clip-art-3302-x-1242.jpg"/>
 
 <script>
 function goBack() {

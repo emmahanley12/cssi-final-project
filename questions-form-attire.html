@@ -7,7 +7,7 @@
   <body class="blurb">
     <h2 class="question_page_headers">Sweatpants or your Sunday best? Check the desired attire.</h2>
     <form method="post" action="/foodattire">
-      <div>
+      <div id="attire_list">
         <br>
         <labeL><input type="checkbox" name="attire" value="casual">Casual<br></labeL>
         <labeL><input type="checkbox" name="attire" value="formal">Dressy<br></labeL>
@@ -16,9 +16,10 @@
       <div><input type="submit" value="Next Question" class="button"></div>
     </form>
     <button onclick="goBack()" class="button">Previous Question</button>
-    <img id="nycskyline" src= "http://www.icubemobile.com/images/amazing-city-skyline-clipart-2-new-york-city-skyline-silhouette-clip-art-3302-x-1242.jpg"/>
   </body>
 </html>
+
+<img id="nycskyline" src= "http://www.icubemobile.com/images/amazing-city-skyline-clipart-2-new-york-city-skyline-silhouette-clip-art-3302-x-1242.jpg"/>
 
 <script>
 function goBack() {
