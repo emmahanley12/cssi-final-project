@@ -292,7 +292,7 @@ div#cssiteam_info {
    border-radius: 150px;
  }
 
- #cssiteam_header, #APIreferences, #results_header, .results {
+ #cssiteam_header, #APIreferences {
    background-color: rgba(255, 255, 255, 0.35);
    display: inline;
    text-align: center;
@@ -300,7 +300,7 @@ div#cssiteam_info {
    border-radius: 100px;
  }
 
- #cssiteam_header{
+ #cssiteam_header {
    margin-left: 40%
  }
 
@@ -314,8 +314,9 @@ div#cssiteam_info {
 
 .results {
   font-family: 'Waiting for the Sunrise', sans-serif;
+  color: cornflowerblue;
   font-weight: bolder;
-  font-size: 120%;
+  font-size: 140%;
 }
 
 #team {
