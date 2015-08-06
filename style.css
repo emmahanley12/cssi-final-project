@@ -93,8 +93,8 @@ a:hover {
 }
 
 #references{
-  margin-left: 88%;
-  margin-top: 2%;
+  margin-left: 92%;
+  margin-top: 3.5%;
   font-size: 150%;
 }
 
@@ -192,25 +192,6 @@ form {
     color: cornflowerblue;
     border-radius: 100px;
 }
-
-#cssiteam_header, #APIreferences, #results_header, .results, {
-  background-color: rgba(255, 255, 255, 0.35);
-  display: inline;
-  text-align: center;
-  margin-left: 40%;
-  border-radius: 100px;
-
-}
-/*
-#food_type_list {
-  -webkit-column-count: 2;
-  column-count: 2;
-  -webkit-column-gap: 10px;
-  column-gap: 10px;
-  margin-left: 30%;
-  margin-right: 30%;
-}
-*/
 
 #column1, #column2 {
   display: inline-block;
@@ -311,8 +292,19 @@ div#cssiteam_info {
    border-radius: 150px;
  }
 
-/*results page*/
+ #cssiteam_header, #APIreferences, #results_header, .results {
+   background-color: rgba(255, 255, 255, 0.35);
+   display: inline;
+   text-align: center;
 
+   border-radius: 100px;
+ }
+
+ #cssiteam_header {
+   margin-left: 40%
+ }
+
+/*results page*/
 #results_header {
   font-family: 'Waiting for the Sunrise', sans-serif;
   color: cornflowerblue;
@@ -342,7 +334,6 @@ div.carousel-inner div img {
 
 
 /* carousel css */
-
 .carousel-fade .carousel-inner .item {
     transition-property: opacity;
   }
