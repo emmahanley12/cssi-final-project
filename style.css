@@ -87,9 +87,6 @@ a:hover {
   font-size: 150%;
 }
 
-.bio {
-  width: 90%;
-}
 /*carousel*/
 .block{
   -webkit-filter: blur(1px);
@@ -209,6 +206,7 @@ body,
 .column {
   display: inline-block;
   margin-left: 5%;
+  width: 88%;
 }
 
 div.image_container {
@@ -225,8 +223,8 @@ div.developer_paragraphs {
   border-radius: 150px;
 }
 
-.column {
-  width: 100%;
+p.bio {
+  width: 10px;
 }
 
 /*reference page*/
