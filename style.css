@@ -5,12 +5,7 @@ body {
   top: -10px;
 }
 
-html {
-
-}
-
 /*homepage*/
-
 div.homepage_links a {
   color: white;
 }
@@ -22,10 +17,6 @@ h1, #enter{
 a:hover {
   text-decoration: none;
 }
-
-/*#homepageh1 {
-  visibility: hidden;
-}*/
 
 #nycskyline1{
   display: inline-block;
@@ -162,7 +153,6 @@ a:hover {
 }
 
 /*the question pages*/
-
 form {
 }
 
@@ -265,12 +255,6 @@ p.bio {
   color: cornflowerblue;
 }
 
-div#APIreferences {
-  -webkit-column-count: 2;
-  column-count: 2;
-  margin-left: 200px;
-}
-
 #cssiteam_header {
   font-family: 'Waiting for the Sunrise', sans-serif;
   text-align: center;
@@ -292,17 +276,14 @@ div#cssiteam_info {
    border-radius: 150px;
  }
 
- #cssiteam_header, #APIreferences {
+ #cssiteam_header {
    background-color: rgba(255, 255, 255, 0.35);
    display: inline;
    text-align: center;
-
    border-radius: 100px;
- }
-
- #cssiteam_header {
    margin-left: 40%
  }
+
 
 /*results page*/
 #results_header {
