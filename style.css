@@ -87,6 +87,9 @@ a:hover {
   font-size: 150%;
 }
 
+.bio {
+  width: 90%;
+}
 /*carousel*/
 .block{
   -webkit-filter: blur(1px);
