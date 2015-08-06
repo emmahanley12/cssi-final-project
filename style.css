@@ -5,12 +5,7 @@ body {
   top: -10px;
 }
 
-html {
-
-}
-
 /*homepage*/
-
 div.homepage_links a {
   color: white;
 }
@@ -22,10 +17,6 @@ h1, #enter{
 a:hover {
   text-decoration: none;
 }
-
-/*#homepageh1 {
-  visibility: hidden;
-}*/
 
 #nycskyline1{
   display: inline-block;
@@ -158,7 +149,6 @@ a:hover {
 }
 
 /*the question pages*/
-
 form {
 }
 
@@ -261,12 +251,6 @@ p.bio {
   color: cornflowerblue;
 }
 
-div#APIreferences {
-  -webkit-column-count: 2;
-  column-count: 2;
-  margin-left: 200px;
-}
-
 #cssiteam_header {
   font-family: 'Waiting for the Sunrise', sans-serif;
   text-align: center;
@@ -291,17 +275,14 @@ div#cssiteam_info {
    border-radius: 150px;
  }
 
- #cssiteam_header, #APIreferences {
+ #cssiteam_header {
    background-color: rgba(255, 255, 255, 0.35);
    display: inline;
    text-align: center;
-
    border-radius: 100px;
- }
-
- #cssiteam_header {
    margin-left: 40%
  }
+
 
 /*results page*/
 #results_header {
@@ -344,37 +325,53 @@ div.carousel-inner div img {
   margin-left: -685px;
 }
 
-/* carousel css */
-.carousel-fade .carousel-inner .item {
-    transition-property: opacity;
-  }
-
-.item, .active.left, .active.right {
-  opacity: 0;
-  }
-
-.active,
-.next.left,
-.prev.right {
-    opacity: 1;
-}
-
-.next,
-.prev,
-.active.left,
-.active.right {
-    left: 0;
-    transform: translate3d(0, 0, 0);
-}
-
-    .carousel-control {
-        z-index: -1;
+.carousel-fade {
+  .carousel-inner {
+    .item {
+      opacity: 0;
+      -webkit-transition-property: opacity;
+      transition-property: opacity;
     }
 
-.carousel,
-.carousel-inner,
-.carousel-inner .item {
-    height: 100%;
+    .active {
+      opacity: 1;
+    }
+
+    .active.left,
+    .active.right {
+      left: 0;
+      opacity: 0;
+      z-index: 1;
+    }
+
+    .next.left,
+    .prev.right {
+      opacity: 1;
+    }
+  }
+
+  .carousel-control {
+    z-index: 2;
+  }
+}
+
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-inner > .item.next,
+    .carousel-inner > .item.active.right {
+      -webkit-transform: translate3d( 0, 0, 0);
+      transform: translate3d( 0, 0, 0);
+    }
+    .carousel-inner > .item.prev,
+    .carousel-inner > .item.active.left {
+      -webkit-transform: translate3d( 0, 0, 0);
+      transform: translate3d( 0, 0, 0);
+    }
+    .carousel-inner > .item.next.left,
+    .carousel-inner > .item.prev.right,
+    .carousel-inner > .item.active {
+       -webkit-transform: translate3d(0, 0, 0);
+       transform: translate3d(0, 0, 0);
+    }
 }
 
 #image1, #image2, #image3 {
