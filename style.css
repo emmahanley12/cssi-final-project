@@ -182,7 +182,7 @@ form {
   color: cornflowerblue;
 }
 
-#food_type_list, #price_list, #other_list, #distance_list, #attire_list, #cssiteam_info, #cssiteam_header {
+#food_type_list, #price_list, #other_list, #distance_list, #attire_list, #cssiteam_header {
     background-color: rgba(255, 255, 255, 0.35);
     display: inline-block;
     color: cornflowerblue;
@@ -277,6 +277,9 @@ div#cssiteam_info {
   -webkit-column-count: 5;
   column-count: 5;
   font-family: 'Waiting for the Sunrise', sans-serif;
+  background-color: rgba(255, 255, 255, 0.35);
+  color: cornflowerblue;
+  border-radius: 100px;
 }
 
 .refpagewords {
