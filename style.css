@@ -1,5 +1,10 @@
 @import url(http://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise);
 
+body {
+  position: relative;
+  top: -10px;
+}
+
 html {
   position: relative;
 }
@@ -16,6 +21,10 @@ h1, #enter{
 
 a:hover {
   text-decoration: none;
+}
+
+#homepageh1 {
+  visibility: hidden;
 }
 
 #nycskyline1{
@@ -80,7 +89,7 @@ a:hover {
 }
 
 #logo{
-  margin-left: 44%;
+  /*margin-left: 44%;*/
   margin-top: 2%;
   font-size: 150%;
 }
@@ -310,7 +319,7 @@ div.carousel-inner div img {
 #logo a img {
   height: 100px;
   width: 100px;
-  margin-left: -800px;
+  margin-left: 30px;
 }
 
 /* carousel css */
