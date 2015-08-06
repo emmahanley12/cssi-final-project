@@ -142,6 +142,7 @@ class ResultsHandler(BaseHandler):
                 'category_filter': category_str,
                 'radius_filter': radius_filter
             }
+
             print "url_params {}".format(url_params)
 
             results_by_term[category[i]] = self.api_request(API_HOST,SEARCH_PATH, url_params=url_params)
