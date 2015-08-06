@@ -37,10 +37,22 @@ a:hover {
 }
 
 #enter a{
-  background-color: cornflowerblue;
+  /*background-color: cornflowerblue;*/
   text-shadow: 1px 1px 1px black;
   padding: 5px 10px ;
   border-radius: 5px;
+  border: 2px solid white;
+
+}
+
+#enter a:hover {
+  /*background-color: cornflowerblue;*/
+  color: gray;
+  background-color: white;
+}
+
+#enter a:active {
+  background-color: lightgray;
 }
 
 #homepageh1 {
@@ -96,6 +108,7 @@ a:hover {
 
 #image1, #image2, #image3 {
   opacity: 1;
+  max-height: 850px;
 }
 
 /*the question pages*/
@@ -213,4 +226,63 @@ div#cssiteam_info {
   font-family: 'Waiting for the Sunrise', sans-serif;
   font-weight: bolder;
   font-size: 120%;
+}
+
+#team {
+  display: block;
+}
+
+div.carousel-inner div img {
+  max-height: 1000px;
+}
+
+
+/* carousel css */
+
+.carousel-fade .carousel-inner .item {
+    transition-property: opacity;
+  }
+
+.item, .active.left, .active.right {
+  opacity: 0;
+  }
+
+.active,
+.next.left,
+.prev.right {
+    opacity: 1;
+}
+
+.next,
+.prev,
+.active.left,
+.active.right {
+    left: 0;
+    transform: translate3d(0, 0, 0);
+}
+
+    .carousel-control {
+        z-index: 2;
+    }
+
+
+
+html,
+body,
+.carousel,
+.carousel-inner,
+.carousel-inner .item {
+    height: 100%;
+}
+
+.item:nth-child(1) {
+    background: darkred;
+}
+
+.item:nth-child(2) {
+    background: red;
+}
+
+.item:nth-child(3) {
+    background: orange;
 }

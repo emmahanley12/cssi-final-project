@@ -29,7 +29,7 @@ results = {}
 
 API_HOST = 'api.yelp.com'
 DEFAULT_TERM = 'dinner'
-DEFAULT_LOCATION = 'San Francisco, CA'
+DEFAULT_LOCATION = 'New York, NY'
 SEARCH_LIMIT = 15
 SEARCH_PATH = '/v2/search/'
 BUSINESS_PATH = '/v2/business/'
@@ -75,8 +75,7 @@ class TypeHandler(BaseHandler):
         self.response.write(template.render())
 
     def post(self):
-        self.session['food_types'] = self.request.get_all('type')
-        self.redirect("results")
+        self.session['food_category'] = self.request.get_all('type')
         self.redirect('foodprice')
 
 class PricesHandler(BaseHandler):
@@ -85,7 +84,7 @@ class PricesHandler(BaseHandler):
         self.response.write(template.render())
 
     def post(self):
-        self.session['food_prices'] = self.request.get_all('price')
+        self.session['food_types'] = self.request.get_all('price')
         self.redirect('fooddistance')
 
 class DistanceHandler(BaseHandler):
@@ -104,7 +103,7 @@ class AttireHandler(BaseHandler):
         self.response.write(template.render())
 
     def post(self):
-        self.session['food_attire'] = self.request.get_all('attire')
+        self.session['food_types'] = self.request.get_all('attire')
         self.redirect('foodother')
 
 class OtherHandler(BaseHandler):
@@ -113,7 +112,7 @@ class OtherHandler(BaseHandler):
         self.response.write(template.render())
 
     def post(self):
-        self.session['food_other'] = self.request.get_all('other_requirements')
+        self.session['food_types'] = self.request.get_all('other_requirements')
         self.redirect('results')
 
 class ResultsHandler(BaseHandler):
@@ -122,6 +121,10 @@ class ResultsHandler(BaseHandler):
         term = self.session['food_types']
         location = self.session['food_zip']
         radius_filter = self.session['food_distance']
+        category_str = ",".join(self.session['food_category'])
+
+        print self.session['food_category']
+        print category_str
 
         results_by_term = {}
         for i in range(len(term)):
@@ -131,7 +134,7 @@ class ResultsHandler(BaseHandler):
                 'term': term[i],
                 'location': location,
                 'limit': SEARCH_LIMIT,
-                'category_filter': 'restaurants',
+                'category_filter': self.session['food_types'],
                 'radius_filter': radius_filter
             }
             print "url_params {}".format(url_params)
