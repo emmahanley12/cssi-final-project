@@ -251,6 +251,11 @@ p.bio {
   color: cornflowerblue;
 }
 
+#yelp {
+  font-family: 'Waiting for the Sunrise', sans-serif;
+  margin-left: 32%
+ }
+
 #cssiteam_header {
   font-family: 'Waiting for the Sunrise', sans-serif;
   text-align: center;
@@ -265,11 +270,6 @@ div#cssiteam_info {
   color: cornflowerblue;
   border-radius: 100px;
 }
-
-.refpagewords {
-  font-family: 'Waiting for the Sunrise', sans-serif;
-  text-align: center;
- }
 
  .developer_img {
    border-radius: 150px;
