@@ -262,7 +262,7 @@ div.carousel-inner div img {
 }
 
     .carousel-control {
-        z-index: 2;
+        z-index: -1;
     }
 
 
@@ -273,16 +273,4 @@ body,
 .carousel-inner,
 .carousel-inner .item {
     height: 100%;
-}
-
-.item:nth-child(1) {
-    background: darkred;
-}
-
-.item:nth-child(2) {
-    background: red;
-}
-
-.item:nth-child(3) {
-    background: orange;
 }
