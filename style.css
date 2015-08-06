@@ -14,7 +14,7 @@ a:hover {
   text-decoration: none;
 }
 
-#nycskyline{
+#nycskyline1{
   display: inline-block;
   width: 100%;
   height:100%;
@@ -111,7 +111,52 @@ a:hover {
   max-height: 850px;
 }
 
+.carousel-fade .carousel-inner .item {
+    transition-property: opacity;
+  }
+
+.item, .active.left, .active.right {
+  opacity: 0;
+  }
+
+.active,
+.next.left,
+.prev.right {
+    opacity: 1;
+}
+
+.next,
+.prev,
+.active.left,
+.active.right {
+    left: 0;
+    transform: translate3d(0, 0, 0);
+}
+
+    .carousel-control {
+        z-index: -1;
+    }
+
+html,
+body,
+.carousel,
+.carousel-inner,
+.carousel-inner .item {
+    height: 100%;
+}
+
 /*the question pages*/
+#nycskyline{
+  display: inline-block;
+  width: 100%;
+  height:100%;
+  z-index: -1;
+  margin-bottom: 0;
+  bottom:0;
+  position: absolute;
+  left: 0;
+}
+
 .blurb{
   font-family: 'Waiting for the Sunrise', sans-serif;
   text-align: center;
@@ -234,43 +279,4 @@ div#cssiteam_info {
 
 div.carousel-inner div img {
   max-height: 1000px;
-}
-
-
-/* carousel css */
-
-.carousel-fade .carousel-inner .item {
-    transition-property: opacity;
-  }
-
-.item, .active.left, .active.right {
-  opacity: 0;
-  }
-
-.active,
-.next.left,
-.prev.right {
-    opacity: 1;
-}
-
-.next,
-.prev,
-.active.left,
-.active.right {
-    left: 0;
-    transform: translate3d(0, 0, 0);
-}
-
-    .carousel-control {
-        z-index: -1;
-    }
-
-
-
-html,
-body,
-.carousel,
-.carousel-inner,
-.carousel-inner .item {
-    height: 100%;
 }

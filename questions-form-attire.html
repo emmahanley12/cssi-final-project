@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html>
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
 <head>
   <title>Attire</title>
   <link rel="stylesheet" type="text/css" href="style.css">
@@ -14,14 +19,8 @@
         <labeL><input type="checkbox" name="attire" value="">I'll wear anything from my birthday suit to a wedding gown!<br></labeL>
       </div>
       <div><input type="submit" value="Next Question"></div>
+      <button onclick="goBack()">Previous Question</button>
     </form>
-    <button onclick="goBack()">Previous Question</button>
     <img id="nycskyline" src= "http://www.icubemobile.com/images/amazing-city-skyline-clipart-2-new-york-city-skyline-silhouette-clip-art-3302-x-1242.jpg"/>
   </body>
 </html>
-
-<script>
-function goBack() {
-    window.history.back();
-}
-</script>
