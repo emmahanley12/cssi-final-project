@@ -6,7 +6,7 @@ body {
 }
 
 html {
-  position: relative;
+
 }
 
 /*homepage*/
@@ -23,9 +23,9 @@ a:hover {
   text-decoration: none;
 }
 
-#homepageh1 {
+/*#homepageh1 {
   visibility: hidden;
-}
+}*/
 
 #nycskyline1{
   display: inline-block;
@@ -164,7 +164,6 @@ a:hover {
 /*the question pages*/
 
 form {
-  height: 600px;
 }
 
 #nycskyline{
@@ -173,8 +172,8 @@ form {
   z-index: -1;
   margin-bottom: 0;
   bottom:0;
-  position: fixed;
   left: 0;
+  position: fixed;
 }
 
 .blurb{
@@ -202,7 +201,7 @@ form {
   border-radius: 100px;
 
 }
-
+/*
 #food_type_list {
   -webkit-column-count: 2;
   column-count: 2;
@@ -210,6 +209,13 @@ form {
   column-gap: 10px;
   margin-left: 30%;
   margin-right: 30%;
+}
+*/
+
+#column1, #column2 {
+  display: inline-block;
+  vertical-align: top;
+  width: 300px;
 }
 
 .button {
@@ -257,6 +263,10 @@ div.developer_paragraphs {
 
 .developer_img {
   border-radius: 150px;
+}
+
+p.bio {
+  width: 100%;
 }
 
 /*reference page*/
