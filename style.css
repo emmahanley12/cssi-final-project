@@ -225,6 +225,7 @@ form {
 .column {
   display: inline-block;
   margin-left: 5%;
+  width: 88%;
 }
 
 div.image_container {
@@ -241,8 +242,8 @@ div.developer_paragraphs {
   border-radius: 150px;
 }
 
-.column {
-  width: 100%;
+p.bio {
+  width: 10px;
 }
 
 /*reference page*/
