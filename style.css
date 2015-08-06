@@ -322,8 +322,9 @@ div#cssiteam_info {
 
 .results {
   font-family: 'Waiting for the Sunrise', sans-serif;
+  color: cornflowerblue;
   font-weight: bolder;
-  font-size: 120%;
+  font-size: 140%;
 }
 
 #team {
