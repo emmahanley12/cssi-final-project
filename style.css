@@ -299,6 +299,11 @@ div#cssiteam_info {
   font-size: 140%;
 }
 
+#resultsbody{
+  background-color: rgba(255, 255, 255, 0.35);
+  border-radius: 100px;
+}
+
 #team {
   display: block;
 }
@@ -325,6 +330,7 @@ div.carousel-inner div img {
   margin-left: -685px;
 }
 
+/*carousel */
 .carousel-fade {
   .carousel-inner {
     .item {
