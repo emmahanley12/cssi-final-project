@@ -123,10 +123,11 @@ class ResultsHandler(BaseHandler):
     def get(self):
 
         term = self.session['food_types']
+        term_str = "+".join(term)
         location = self.session['food_zip']
         radius_filter = self.session['food_distance']
         category = self.session['food_category']
-        category_str = ",".join(self.session['food_category'])
+        category_str = ",".join(category)
 
         print self.session['food_category']
         print category_str
@@ -136,7 +137,7 @@ class ResultsHandler(BaseHandler):
             category[i] = category[i].replace(' ', '+')
 
             url_params = {
-                'term': "",
+                'term': term_str,
                 'location': location,
                 'limit': SEARCH_LIMIT,
                 'category_filter': category_str,
