@@ -148,9 +148,15 @@ class ResultsHandler(BaseHandler):
             print "url_params {}".format(url_params)
 
             results_by_term[category[i]] = self.api_request(API_HOST,SEARCH_PATH, url_params=url_params)
+            print 'This is results: ' + str(results_by_term[category[i]])
+
+        has_results = False
+        for i in range(len(category)):
+            if results_by_term[category[i]]['total'] > 0:
+                has_results = True
 
         template = jinja_environment.get_template('results.html')
-        self.response.write(template.render({'results_list' : results_by_term}))
+        self.response.write(template.render({'results_list' : results_by_term, 'has_results' : has_results}))
 
     def api_request(self, host, path, url_params=None):
         """Prepares OAuth authentication and sends the request to the API.
