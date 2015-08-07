@@ -107,7 +107,7 @@ class AttireHandler(BaseHandler):
         self.response.write(template.render())
 
     def post(self):
-        self.session['food_types'] = self.request.get_all('attire')
+        self.session['food_types'] = self.session['food_types'] + self.request.get_all('attire')
         self.redirect('foodother')
 
 class OtherHandler(BaseHandler):
@@ -116,7 +116,7 @@ class OtherHandler(BaseHandler):
         self.response.write(template.render())
 
     def post(self):
-        self.session['food_types'] = self.request.get_all('other_requirements')
+        self.session['food_types'] = self.session['food_types'] + self.request.get_all('other_requirements')
         self.redirect('results')
 
 class ResultsHandler(BaseHandler):
@@ -129,6 +129,7 @@ class ResultsHandler(BaseHandler):
         category = self.session['food_category']
         category_str = ",".join(category)
 
+        print "the term string is: " + term_str
         print self.session['food_category']
         print category_str
 

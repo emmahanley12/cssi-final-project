@@ -340,6 +340,14 @@ div.carousel-inner div img {
   text-align: left;
 }
 
+.no_results {
+  font-family: 'Waiting for the Sunrise', sans-serif;
+  color: cornflowerblue;
+  text-align: center;
+  display: block;
+  border-radius: 100px;
+}
+
 /*carousel */
 .carousel-fade {
   .carousel-inner {

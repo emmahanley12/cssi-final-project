@@ -12,22 +12,27 @@
 <head>
   <body>
       <ol id="resultsbody">
-        {% for result in results_list %}
-        <div class="results">
-        {% for business in results_list[result]['businesses'] %}
-          <li><h1><a href="{{business.url}}">{{business['name']}}</a></h1></li>
-          <ul>
-            <li><img src="{{business.rating_img_url}}"></li>
-            <li>{{business.display_phone}}</li>
-            <li>{{business.location.display_address[0]}}<br>
-                {{business.location.display_address[1]}}<br>
-                {{business.location.display_address[2]}}
-            <li>{{business.snippet_text}}</li>
-          </ul>
-          <hr>
+        {% if results_list %}
+          {% for result in results_list %}
+          <div class="results">
+          {% for business in results_list[result]['businesses'] %}
+            <li><h1><a href="{{business.url}}">{{business['name']}}</a></h1></li>
+            <ul>
+              <li><img src="{{business.rating_img_url}}"></li>
+              <li>{{business.display_phone}}</li>
+              <li>{{business.location.display_address[0]}}<br>
+                  {{business.location.display_address[1]}}<br>
+                  {{business.location.display_address[2]}}
+              <li>{{business.snippet_text}}</li>
+            </ul>
+            <hr>
+            {% endfor %}
+          </div>
           {% endfor %}
-        </div>
-        {% endfor %}
+        {% else %}
+          <h2 class="no_results">Sorry, there were no results!</h2> <br>
+          <h3 class="no_results">Please make sure your form is completely filled out!</h3><br>
+        {% endif %}
       </ol>
   </body>
 
