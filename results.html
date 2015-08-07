@@ -12,7 +12,7 @@
 <head>
   <body>
       <ol id="resultsbody">
-        {% if results_list %}
+        {% if has_results %}
           {% for result in results_list %}
           <div class="results">
           {% for business in results_list[result]['businesses'] %}
